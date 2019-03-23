@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 
 model = Sequential()
 model.add(TimeDistributed(Conv2D(64, (3, 3), activation='relu', padding='same'), 
-                          input_shape=(5,128, 128 ,1))) 
+                          input_shape=("specify frame_size without quotes",128, 128 ,1))) 
 
 model.add(TimeDistributed(MaxPooling2D(pool_size=(2, 2))))
 model.add(TimeDistributed(Conv2D(32, (3, 3), activation='relu', padding='same')))
