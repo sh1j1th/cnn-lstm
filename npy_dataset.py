@@ -15,7 +15,7 @@ print(cv2.__version__)
 parent_dir = 'raw_data/'
 parent_dir = os.path.abspath(parent_dir)
 frames_list = []
-path = r'C:\Users\shj_k\Desktop\Project\dataset_npy'
+
 
 
 num_vids = 3        #took only 5 vids due to limited cpu capacity
