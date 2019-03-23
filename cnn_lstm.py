@@ -38,7 +38,7 @@ model.add(TimeDistributed(Conv2D(1, (3,3), padding='same')))
 
 model.compile(optimizer='adam', loss='mse')
 print ("2")
-data = np.load(r"C:\Users\shj_k\Desktop\Project\walking.npy")
+data = np.load(".npy file path goes here")
 print (data.shape)
 (x_train,x_test) = train_test_split(data)
 
